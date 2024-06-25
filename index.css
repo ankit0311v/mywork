@@ -1,0 +1,33 @@
+body{
+    background-color: lightcyan;
+}
+h1{
+    text-align: center;
+}
+button{
+    background-color: brown;
+    color:black;
+}
+#kill{
+    color:pink;
+}
+#d1{
+    background-color: lightsalmon;
+    text-align: center;
+    font-weight: 900;
+}
+div{
+    background-color: aqua;
+}
+#xxx{
+    text-align: center;
+    font-family: Impact;
+    text-transform: uppercase;
+}
+#spd{
+    font-size: 25px;
+}
+#login{
+    text-align: right;
+}
+

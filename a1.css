@@ -1,0 +1,12 @@
+table,td{
+    border: 1px solid black;
+}
+body{
+    background-color:indianred;
+}
+h1{
+    text-align: center;
+}
+form{
+    background-color: aqua;
+}
