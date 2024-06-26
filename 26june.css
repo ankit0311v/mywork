@@ -1,0 +1,29 @@
+table,td{
+    border: 1px solid black;
+}
+#tab{
+    margin-left: 800px;
+}
+
+h1{
+    text-align: center;
+}
+#allx{
+    border-style: dotted;
+    background-color: aqua;
+}
+.x1{
+    border-style: groove;
+    background-color: darkgoldenrod;
+}
+#xyz{
+    
+    width: 100px;
+    background-color: brown;
+}
+a{
+    margin: 130px;
+}
+#img1{
+    margin-right: 50;
+}
