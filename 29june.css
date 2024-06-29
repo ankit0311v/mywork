@@ -1,0 +1,44 @@
+#x1{
+    border-style: dashed;
+    border-color: black;
+    background-color: white;
+    height: 50px;
+
+}
+#x2{
+    background-color:lightskyblue;
+    height: 95px;
+}
+.x2i1{
+    text-align: center;
+    
+}
+/* a{
+    text-align: center;
+    color:black;
+    margin-left: 200px;
+    display: inline;
+} */
+.y{
+    margin: 10px;
+    border-style: dotted;
+    background-color: lightcoral;
+    height: 100px;
+    width: 200px;
+    display: inline-block;
+    
+}
+.y1{
+    display: inline;
+    margin:10px;
+}
+/* .y2{
+    display: inline;
+} */
+.x3a{
+    margin: 20px;
+}
+.z3a{
+
+    margin: 21px;
+}
