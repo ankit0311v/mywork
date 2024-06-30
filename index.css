@@ -1,29 +1,47 @@
-table,td{
-    border: 1px solid black;
-}
-#tab{
-    margin-left: 800px;
+ /* div class 0 formatting border---------------------------------------------------------------------------------------------------------------------- */
+.div0{
+    margin: 50px;
+    background-color: black;
+    display: inline-block;
 }
 
-h1{
-    text-align: center;
+/* table div class 1 formatting border---------------------------------------------------------------------------------------------------------------------- */
+table,td,th{
+    border: 1px solid black;
 }
-#allx{
-    border-style: dotted;
-    background-color: aqua;
+/* displaying div class 1 all table in line  */
+.d1{
+    margin: 30px;
+    display: inline-block;
 }
-.x1{
-    border-style: groove;
-    background-color: darkgoldenrod;
-}
-#xyz{
-    
+/* table formatting */
+#d1t1{
+    color:lightgray;
     width: 100px;
     background-color: brown;
 }
-a{
-    margin: 130px;
+/* div 2 formatting---------------------------------------------------------------------------------------------------------------------- */
+.d2{
+    background-color: lightgoldenrodyellow;
 }
-#img1{
-    margin-right: 50;
+/* div 3 formatting---------------------------------------------------------------------------------------------------------------------- */
+.d3{
+    background-color: lightgreen;
+}
+/* div 4 formatting contact links---------------------------------------------------------------------------------------------------------------------- */
+.d4{
+    
+}
+/* anchor of div 4 contact link  formatting */
+.x1{
+    color: aliceblue;
+    margin: 120px;
+    border-radius: 50%;
+    border-style: double;
+    background-color: brown;
+}
+
+/* all headers formatting h1---------------------------------------------------------------------------------------------------------------------- */
+h1,h3{
+    text-align: center;
 }
