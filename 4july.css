@@ -1,0 +1,85 @@
+#di1{
+    height: 25px;
+    background-color: aquamarine;
+}
+#di2{
+    
+    height: 50px;
+    background-color: black;
+}
+.dc1{
+    /* padding: 10px; */
+    height: 50px;
+    width: 50px;
+    margin: 50px;
+    text-align: center;
+
+    background-color: lightpink;
+    display: inline-block;
+}
+.cwr{
+        height: 150px;
+        width: 150px;
+        /* padding: 20px; */
+        margin: 80px;
+        background-color: lightgrey;
+        text-align: center;
+        display: inline-block;
+}
+.cp{
+    height: 100px;
+    width: 100px;
+    /* margin: 85px; */
+    border-color: black;
+    border-style: double;
+    border-radius: 50%;
+    /* padding: 3px; */
+    margin: 10px;
+    background-color: lightgoldenrodyellow;
+}
+.rectangle{
+    height: 200px;
+    width: 200px;
+    margin: 55px;
+    background-color: lightgrey;
+    text-align: center;
+    display: inline-block;
+}
+
+.circle{
+    /* position: absolute; */
+    height: 180px;
+    width: 180px;
+    margin: 85px;
+    border-color: black;
+    border-style: double;
+    
+    border-radius: 50%;
+    /* margin-left: 60px; */
+    background-color: lightgoldenrodyellow;
+    display: inline-block;
+}
+a{
+    position: relative;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    font-weight: 550;
+    /* font-size:10px; */
+    margin: 4px;
+}
+button{
+    background-color: brown;
+}
+.cpi{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+.ci{
+    height: 180px;
+    width: 180px;
+    
+    border-radius: 50%;
+
+}
