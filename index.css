@@ -40,8 +40,19 @@ table,td,th{
     border-style: double;
     background-color: brown;
 }
+.xz1{
+    margin: 430px;
+}
+#icon{
+    margin: 155px;
+    display: inline-block;
+    
+}
+#h1x{
+    margin: 120px;
+}
 
 /* all headers formatting h1---------------------------------------------------------------------------------------------------------------------- */
-h1,h3{
+h2,h1,h3{
     text-align: center;
 }
