@@ -29,9 +29,9 @@ table,td,th{
     background-color: lightgreen;
 }
 /* div 4 formatting contact links---------------------------------------------------------------------------------------------------------------------- */
-.d4{
+/* .d4{
     
-}
+} */
 /* anchor of div 4 contact link  formatting */
 .x1{
     color: aliceblue;
@@ -40,8 +40,15 @@ table,td,th{
     border-style: double;
     background-color: brown;
 }
+#top{
+    background-color: lightsalmon;
+}
 .xz1{
     margin: 430px;
+}
+#btn1{
+    margin-left: 410px;
+    margin-right: 440px;
 }
 #icon{
     margin: 155px;
