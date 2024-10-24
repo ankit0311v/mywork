@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>space tourism</title>
+    <link rel="stylesheet" href="25octchatgpt.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Space Tourism Adventures</h1>
+            <nav>
+                <ul>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#rockets">Rockets</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#mars">Mars Tours</a></li>
+                    <li><a href="#booking">Book Ticket</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="auth-links">
+                <a href="#login">Login</a> | <a href="#signup">Sign Up</a>
+            </div>
+        </div>
+    </header>
+    
+    <main class="container">
+        <section id="services">
+            <h2>Our Services</h2>
+            <p>Experience the thrill of space travel with our exclusive packages:</p>
+            <div class="service-list">
+                <div class="service-item">
+                    <strong>Suborbital Flights</strong>
+                    <p>Experience weightlessness and see Earth from above.</p>
+                </div>
+                <div class="service-item">
+                    <strong>Orbital Spaceflights</strong>
+                    <p>Stay aboard a space station and witness Earth from orbit.</p>
+                </div>
+                <div class="service-item">
+                    <strong>Lunar Tours</strong>
+                    <p>Visit the Moon and explore its surface.</p>
+                </div>
+                <div class="service-item">
+                    <strong>Mars Expeditions</strong>
+                    <p>Join humanity's next giant leap with missions to Mars.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="rockets">
+            <h2>Our Rockets</h2>
+            <p>We utilize state-of-the-art rockets for an unforgettable journey:</p>
+            <div class="rocket-list">
+                <div class="rocket-item">
+                    <strong>Falcon 9</strong>
+                    <p>A reusable rocket by SpaceX, known for its reliability.</p>
+                </div>
+                <div class="rocket-item">
+                    <strong>New Shepard</strong>
+                    <p>Built by Blue Origin for suborbital flights.</p>
+                </div>
+                <div class="rocket-item">
+                    <strong>Starship</strong>
+                    <p>Innovative spacecraft by SpaceX aimed at Mars missions.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience">
+            <h2>Customer Experience</h2>
+            <p>Hear what our customers have to say:</p>
+            <ul>
+                <li>"The view of Earth from space was breathtaking!"</li>
+                <li>"Floating in zero gravity was a life-changing experience!"</li>
+                <li>"The journey to the stars was worth every penny!"</li>
+            </ul>
+        </section>
+
+        <section id="booking">
+            <h2>Book Your Ticket</h2>
+            <p>Ready to embark on a journey beyond Earth? Fill out the form below!</p>
+            <div class="booking-container">
+                <form>
+                    <label for="destination">Destination:</label>
+                    <select id="destination" name="destination" required>
+                        <option value="suborbital">Suborbital Flight</option>
+                        <option value="orbital">Orbital Spaceflight</option>
+                        <option value="lunar">Lunar Tour</option>
+                        <option value="mars">Mars Expedition</option>
+                    </select>
+
+                    <label for="date">Preferred Date:</label>
+                    <input type="date" id="date" name="date" required>
+
+                    <label for="passengers">Number of Passengers:</label>
+                    <input type="number" id="passengers" name="passengers" min="1" required>
+
+                    <label for="contact">Contact Number:</label>
+                    <input type="tel" id="contact" name="contact" required>
+
+                    <button type="submit" class="my-button">Book Now</button>
+                </form>
+            </div>
+        </section>
+
+        <section id="mars">
+            <h2>Upcoming Mars Tours</h2>
+            <p>Join us for an extraordinary journey to Mars!</p>
+            <ul>
+                <li><strong>Launch Date:</strong> 2025</li>
+                <li><strong>Duration:</strong> 6 months round trip</li>
+                <li><strong>Experience:</strong> Live aboard a spacecraft and explore Mars.</li>
+            </ul>
+        </section>
+
+        <section id="about">
+            <h2>About Us</h2>
+            <p>We are pioneers in space tourism, making space accessible for everyone.</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit" class="my-button">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Space Tourism Adventures</p>
+    </footer>
+</body>
+</html>
