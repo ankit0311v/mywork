@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Missile Marketplace</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #0a0a0a, #1e1e1e);
+            color: #ffffff;
+        }
+        header {
+            background: linear-gradient(135deg, #4a90e2, #00ccff);
+            color: #fff;
+            text-align: center;
+            padding: 30px 0;
+            border-bottom: 2px solid #00ccff;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.8);
+            position: relative;
+        }
+        h1 {
+            margin: 0;
+            font-size: 3em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+        h2 {
+            font-size: 2em;
+            margin: 10px 0;
+        }
+        .offer-section {
+            background: #00ccff;
+            color: #000;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            margin: 20px 0;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+        .missile-list {
+            max-width: 1200px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .missile-item {
+            background: #2b2b2b;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s, box-shadow 0.3s;
+            text-align: center;
+            position: relative;
+        }
+        .missile-item::before {
+            content: '';
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            right: 10px;
+            bottom: 10px;
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.1);
+            z-index: 0;
+        }
+        .missile-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 204, 255, 0.7);
+        }
+        .missile-item h2, .missile-item p {
+            position: relative;
+            z-index: 1;
+        }
+        .buy-button {
+            background-color: #4a90e2;
+            color: #fff;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .buy-button:hover {
+            background-color: #00ccff;
+            transform: scale(1.05);
+        }
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+            background: #4a90e2;
+            color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Missile Marketplace</h1>
+    <p>Buy missiles for self-defense</p>
+    <p>Explore our range of missiles for defense and beyond!</p>
+</header>
+
+<div class="offer-section">
+    <h2>Special Offers</h2>
+    <p><strong>🔥 Buy 1 Get 1 Free!</strong></p>
+    <p><strong>🎉 30% Discount if You Buy 5!</strong></p>
+</div>
+
+<div class="missile-list">
+    <div class="missile-item">
+        <h2>1. Ballistic Missiles</h2>
+        <p>Deliver warheads on a predetermined trajectory, ideal for long-range targets.</p>
+        <a href="#" class="buy-button">Buy Now</a>
+    </div>
+    <div class="missile-item">
+        <h2>2. Cruise Missiles</h2>
+        <p>Precision-guided missiles that fly at a constant altitude, great for targeted strikes.</p>
+        <a href="#" class="buy-button">Buy Now</a>
+    </div>
+    <div class="missile-item">
+        <h2>3. Surface-to-Air Missiles (SAMs)</h2>
+        <p>Intercept and destroy aerial threats with these ground-based systems.</p>
+        <a href="#" class="buy-button">Buy Now</a>
+    </div>
+    <div class="missile-item">
+        <h2>4. Air-to-Air Missiles</h2>
+        <p>Engage airborne targets from aircraft, essential for air superiority.</p>
+        <a href="#" class="buy-button">Buy Now</a>
+    </div>
+    <div class="missile-item">
+        <h2>5. Anti-Ship Missiles</h2>
+        <p>Target and destroy enemy ships, crucial for naval engagements.</p>
+        <a href="#" class="buy-button">Buy Now</a>
+    </div>
+    <div class="missile-item">
+        <h2>6. Anti-Tank Missiles</h2>
+        <p>Designed to penetrate armor, perfect for ground assaults against vehicles.</p>
+        <a href="#" class="buy-button">Buy Now</a>
+    </div>
+    <div class="missile-item">
+        <h2>7. Submarine-Launched Ballistic Missiles (SLBMs)</h2>
+        <p>Stealthy missiles launched from submarines for strategic strikes.</p>
+        <a href="#" class="buy-button">Buy Now</a>
+    </div>
+    <div class="missile-item">
+        <h2>8. Air-Launched Cruise Missiles (ALCMs)</h2>
+        <p>Launched from bombers, these missiles can hit distant targets precisely.</p>
+        <a href="#" class="buy-button">Buy Now</a>
+    </div>
+    <div class="missile-item">
+        <h2>9. Hypervelocity Projectiles</h2>
+        <p>Experimental projectiles traveling faster than Mach 5 for advanced warfare.</p>
+        <a href="#" class="buy-button">Buy Now</a>
+    </div>
+    <div class="missile-item">
+        <h2>10. Land Attack Missiles</h2>
+        <p>Designed for long-range strikes against ground targets.</p>
+        <a href="#" class="buy-button">Buy Now</a>
+    </div>
+    <div class="missile-item">
+        <h2>11. Tactical Missiles</h2>
+        <p>Short-range missiles for quick battlefield support and engagements.</p>
+        <a href="#" class="buy-button">Buy Now</a>
+    </div>
+    <div class="missile-item">
+        <h2>12. Theater Ballistic Missiles (TBMs)</h2>
+        <p>Used in regional conflicts, targeting enemy forces effectively.</p>
+        <a href="#" class="buy-button">Buy Now</a>
+    </div>
+    <div class="missile-item">
+        <h2>13. Decoy Missiles</h2>
+        <p>Mislead enemy defenses, providing cover for primary assets.</p>
+        <a href="#" class="buy-button">Buy Now</a>
+    </div>
+    <div class="missile-item">
+        <h2>14. Electronic Warfare Missiles</h2>
+        <p>Disrupt enemy electronics and communications during conflicts.</p>
+        <a href="#" class="buy-button">Buy Now</a>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 Missile Marketplace. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
