@@ -45,19 +45,20 @@
             text-align: center;
             transition: background 0.3s, transform 0.3s;
             box-shadow: 0 4px 15px rgba(0, 255, 204, 0.3);
-            display: inline-block; /* Align guns horizontally */
+            display: inline-block;
         }
         .gun:hover {
             background: rgba(255, 255, 255, 0.2);
             transform: scale(1.05);
         }
         .gun img {
-            width: 100%; /* Full width */
-            height: 150px; /* Fixed height */
-            object-fit: cover; /* Crop to fit */
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
             border-radius: 8px;
             margin-bottom: 10px;
             border: 2px solid #00ffcc;
+            cursor: pointer; /* Change cursor to pointer for clickable images */
         }
         h2 {
             font-size: 1.8em;
@@ -74,6 +75,36 @@
             margin: 5px 0;
             color: #b0b0b0;
         }
+        
+        /* Modal styles */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+        }
+        .modal-content {
+            max-width: 90%;
+            max-height: 90%;
+            margin: auto;
+            border: 2px solid #00ffcc;
+        }
+        .close {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            color: #fff;
+            font-size: 40px;
+            font-weight: bold;
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
@@ -82,29 +113,28 @@
     </header>
 
     <section>
-
         <!-- Light Machine Guns (LMG) -->
         <div class="category">
             <h2>Light Machine Guns (LMG)</h2>
             <div class="subcategory">
                 <div class="gun">
-                    <img src="Thunderstrike Light machine gun.jpg" alt="Thunderstrike LMG">
+                    <img src="Thunderstrike Light machine gun.jpg" alt="Thunderstrike LMG" onclick="openModal('Thunderstrike Light machine gun.jpg')">
                     <h2>Thunderstrike LMG</h2>
                 </div>
                 <div class="gun">
-                    <img src="Viper X-12.jpg" alt="Viper X-12">
+                    <img src="Viper X-12.jpg" alt="Viper X-12" onclick="openModal('Viper X-12.jpg')">
                     <h2>Viper X-12</h2>
                 </div>
                 <div class="gun">
-                    <img src="Phoenix Raptor.jpg" alt="Phoenix Raptor">
+                    <img src="Phoenix Raptor.jpg" alt="Phoenix Raptor" onclick="openModal('Phoenix Raptor.jpg')">
                     <h2>Phoenix Raptor</h2>
                 </div>
                 <div class="gun">
-                    <img src="Cheetah Blaze.jpg" alt="Cheetah Blaze">
+                    <img src="Cheetah Blaze.jpg" alt="Cheetah Blaze" onclick="openModal('Cheetah Blaze.jpg')">
                     <h2>Cheetah Blaze</h2>
                 </div>
                 <div class="gun">
-                    <img src="Falcon Fury.jpg" alt="Falcon Fury">
+                    <img src="Falcon Fury.jpg" alt="Falcon Fury" onclick="openModal('Falcon Fury.jpg')">
                     <h2>Falcon Fury</h2>
                 </div>
             </div>
@@ -115,15 +145,15 @@
             <h2>Medium Machine Guns (MMG)</h2>
             <div class="subcategory">
                 <div class="gun">
-                    <img src="Shadow Hunter MMG.jpg" alt="Shadow Hunter MMG">
+                    <img src="Shadow Hunter MMG.jpg" alt="Shadow Hunter MMG" onclick="openModal('Shadow Hunter MMG.jpg')">
                     <h2>Shadow Hunter MMG</h2>
                 </div>
                 <div class="gun">
-                    <img src="Steel Serpent.jpg" alt="Steel Serpent">
+                    <img src="Steel Serpent.jpg" alt="Steel Serpent" onclick="openModal('Steel Serpent.jpg')">
                     <h2>Steel Serpent</h2>
                 </div>
                 <div class="gun">
-                    <img src="Cobra Strike.jpg" alt="Cobra Strike">
+                    <img src="Cobra Strike.jpg" alt="Cobra Strike" onclick="openModal('Cobra Strike.jpg')">
                     <h2>Cobra Strike</h2>
                 </div>
             </div>
@@ -134,15 +164,15 @@
             <h2>Heavy Machine Guns (HMG)</h2>
             <div class="subcategory">
                 <div class="gun">
-                    <img src="Titan Reaper HMG.jpg" alt="Titan Reaper HMG">
+                    <img src="Titan Reaper HMG.jpg" alt="Titan Reaper HMG" onclick="openModal('Titan Reaper HMG.jpg')">
                     <h2>Titan Reaper HMG</h2>
                 </div>
                 <div class="gun">
-                    <img src="Dragonfire .50.jpg" alt="Dragonfire .50">
+                    <img src="Dragonfire .50.jpg" alt="Dragonfire .50" onclick="openModal('Dragonfire .50.jpg')">
                     <h2>Dragonfire .50</h2>
                 </div>
                 <div class="gun">
-                    <img src="Griffin Vortex.jpg" alt="Griffin Vortex">
+                    <img src="Griffin Vortex.jpg" alt="Griffin Vortex" onclick="openModal('Griffin Vortex.jpg')">
                     <h2>Griffin Vortex</h2>
                 </div>
             </div>
@@ -153,20 +183,42 @@
             <h2>Specialty Machine Guns</h2>
             <div class="subcategory">
                 <div class="gun">
-                    <img src="Nova Blaster.jpg" alt="Nova Blaster">
+                    <img src="Nova Blaster.jpg" alt="Nova Blaster" onclick="openModal('Nova Blaster.jpg')">
                     <h2>Nova Blaster</h2>
                 </div>
                 <div class="gun">
-                    <img src="Wraith Gunner.jpg" alt="Wraith Gunner">
+                    <img src="Wraith Gunner.jpg" alt="Wraith Gunner" onclick="openModal('Wraith Gunner.jpg')">
                     <h2>Wraith Gunner</h2>
                 </div>
                 <div class="gun">
-                    <img src="Havoc V2.jpg" alt="Havoc V2">
+                    <img src="Havoc V2.jpg" alt="Havoc V2" onclick="openModal('Havoc V2.jpg')">
                     <h2>Havoc V2</h2>
                 </div>
             </div>
         </div>
-
     </section>
+
+    <!-- Modal for Full-Size Image -->
+    <div id="imageModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage" alt="Full Size">
+    </div>
+
+    <script>
+        function openModal(imageSrc) {
+            document.getElementById('modalImage').src = imageSrc;
+            document.getElementById('imageModal').style.display = "flex";
+        }
+        function closeModal() {
+            document.getElementById('imageModal').style.display = "none";
+        }
+        // Close modal when clicking outside the image
+        window.onclick = function(event) {
+            const modal = document.getElementById('imageModal');
+            if (event.target === modal) {
+                closeModal();
+            }
+        }
+    </script>
 </body>
 </html>
