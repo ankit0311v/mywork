@@ -84,6 +84,7 @@
             border-radius: 12px;
             box-shadow: 0 4px 20px rgba(0, 255, 255, 0.3);
             transition: box-shadow 0.3s;
+            cursor: pointer; /* Indicate clickable image */
         }
         .image-container img {
             width: 100%;
@@ -103,6 +104,34 @@
                 flex: 1 1 100%; /* Full width on smaller screens */
             }
         }
+        /* Modal Styles */
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.9);
+            justify-content: center;
+            align-items: center;
+        }
+        .modal-content {
+            max-width: 90%;
+            max-height: 90%;
+            margin: auto;
+        }
+        .close {
+            position: absolute;
+            top: 20px;
+            right: 35px;
+            color: #ffffff;
+            font-size: 40px;
+            font-weight: bold;
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
@@ -114,7 +143,7 @@
         <div class="jet-container">
             <div class="jet">
                 <h3>Model: X-47B Phantom</h3>
-                <div class="image-container">
+                <div class="image-container" onclick="openModal('X-47B Phantom.jpg')">
                     <img src="X-47B Phantom.jpg" alt="X-47B Phantom">
                 </div>
                 <div class="features">
@@ -128,7 +157,7 @@
             </div>
             <div class="jet">
                 <h3>Model: F-22 Raptor II</h3>
-                <div class="image-container">
+                <div class="image-container" onclick="openModal('F-22 Raptor II.jpg')">
                     <img src="F-22 Raptor II.jpg" alt="F-22 Raptor II">
                 </div>
                 <div class="features">
@@ -148,7 +177,7 @@
         <div class="jet-container">
             <div class="jet">
                 <h3>Model: A-10 Thunderbolt X</h3>
-                <div class="image-container">
+                <div class="image-container" onclick="openModal('A-10 Thunderbolt X.jpg')">
                     <img src="A-10 Thunderbolt X.jpg" alt="A-10 Thunderbolt X">
                 </div>
                 <div class="features">
@@ -162,7 +191,7 @@
             </div>
             <div class="jet">
                 <h3>Model: T-50 PAK FA</h3>
-                <div class="image-container">
+                <div class="image-container" onclick="openModal('T-50 PAK FA.jpg')">
                     <img src="T-50 PAK FA.jpg" alt="T-50 PAK FA">
                 </div>
                 <div class="features">
@@ -182,7 +211,7 @@
         <div class="jet-container">
             <div class="jet">
                 <h3>Model: F-35 Lightning II</h3>
-                <div class="image-container">
+                <div class="image-container" onclick="openModal('F-35 Lightning II.jpg')">
                     <img src="F-35 Lightning II.jpg" alt="F-35 Lightning II">
                 </div>
                 <div class="features">
@@ -196,7 +225,7 @@
             </div>
             <div class="jet">
                 <h3>Model: Eurofighter Typhoon</h3>
-                <div class="image-container">
+                <div class="image-container" onclick="openModal('Eurofighter Typhoon.jpg')">
                     <img src="Eurofighter Typhoon.jpg" alt="Eurofighter Typhoon">
                 </div>
                 <div class="features">
@@ -216,7 +245,7 @@
         <div class="jet-container">
             <div class="jet">
                 <h3>Model: MQ-9 Reaper</h3>
-                <div class="image-container">
+                <div class="image-container" onclick="openModal('MQ-9 Reaper.jpg')">
                     <img src="MQ-9 Reaper.jpg" alt="MQ-9 Reaper">
                 </div>
                 <div class="features">
@@ -230,7 +259,7 @@
             </div>
             <div class="jet">
                 <h3>Model: X-62 VISTA</h3>
-                <div class="image-container">
+                <div class="image-container" onclick="openModal('X-62 VISTA.jpg')">
                     <img src="X-62 VISTA.jpg" alt="X-62 VISTA">
                 </div>
                 <div class="features">
@@ -250,7 +279,7 @@
         <div class="jet-container">
             <div class="jet">
                 <h3>Model: Boeing Phantom Works</h3>
-                <div class="image-container">
+                <div class="image-container" onclick="openModal('Boeing Phantom Works.jpg')">
                     <img src="Boeing Phantom Works.jpg" alt="Boeing Phantom Works">
                 </div>
                 <div class="features">
@@ -264,7 +293,7 @@
             </div>
             <div class="jet">
                 <h3>Model: Aurora Flight Sciences</h3>
-                <div class="image-container">
+                <div class="image-container" onclick="openModal('Aurora Flight Sciences.jpg')">
                     <img src="Aurora Flight Sciences.jpg" alt="Aurora Flight Sciences">
                 </div>
                 <div class="features">
@@ -279,5 +308,27 @@
         </div>
     </div>
 
+    <!-- Modal for Full-Size Image -->
+    <div id="imageModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage" alt="Full Size">
+    </div>
+
+    <script>
+        function openModal(imageSrc) {
+            document.getElementById('modalImage').src = imageSrc;
+            document.getElementById('imageModal').style.display = "flex";
+        }
+        function closeModal() {
+            document.getElementById('imageModal').style.display = "none";
+        }
+        // Close modal when clicking outside the image
+        window.onclick = function(event) {
+            const modal = document.getElementById('imageModal');
+            if (event.target === modal) {
+                closeModal();
+            }
+        }
+    </script>
 </body>
 </html>
