@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Futuristic Fighter Jets</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to bottom, #1e1e2f, #121212);
+            color: #ffffff;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+            overflow-y: auto; /* Allow vertical scrolling */
+            height: 100vh; /* Full viewport height */
+            box-sizing: border-box; /* Include padding in height */
+        }
+        @keyframes starfield {
+            from { background-position: 0 0; }
+            to { background-position: 0 100%; }
+        }
+        .background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('https://example.com/starfield.png') repeat;
+            animation: starfield 30s linear infinite;
+            z-index: -1;
+        }
+        h1 {
+            margin-bottom: 20px;
+            font-size: 2.5em;
+            text-shadow: 0 0 20px rgba(0, 255, 255, 0.8);
+        }
+        h2 {
+            color: #61dafb;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+            margin-top: 30px;
+        }
+        .category {
+            margin: 40px 0;
+            border-top: 2px solid #61dafb;
+            padding-top: 20px;
+        }
+        .jet-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap; /* Allows wrapping on smaller screens */
+            gap: 20px; /* Space between jets */
+        }
+        .jet {
+            flex: 1 1 300px; /* Flex grow, shrink, and basis */
+            border: 2px solid #61dafb;
+            border-radius: 12px;
+            padding: 20px;
+            background-color: rgba(34, 34, 51, 0.8);
+            box-shadow: 0 4px 30px rgba(0, 255, 255, 0.5);
+            transition: transform 0.2s, box-shadow 0.3s;
+            max-width: 400px; /* Limit maximum width */
+        }
+        .jet:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 40px rgba(0, 255, 255, 0.7);
+        }
+        .features {
+            text-align: left;
+            margin-top: 10px;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.3s ease, transform 0.3s ease;
+        }
+        .jet:hover .features {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .image-container {
+            width: 100%; /* Full width of the jet card */
+            height: 200px; /* Set desired height */
+            overflow: hidden;
+            border: 2px solid #61dafb;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 255, 255, 0.3);
+            transition: box-shadow 0.3s;
+        }
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Maintain aspect ratio */
+            transition: transform 0.3s;
+        }
+        .image-container img:hover {
+            transform: scale(1.1);
+        }
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        @media (max-width: 600px) {
+            .jet {
+                flex: 1 1 100%; /* Full width on smaller screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="background"></div>
+    <h1>Futuristic Fighter Jets</h1>
+
+    <div class="category">
+        <h2>Stealth Fighters</h2>
+        <div class="jet-container">
+            <div class="jet">
+                <h3>Model: X-47B Phantom</h3>
+                <div class="image-container">
+                    <img src="X-47B Phantom.jpg" alt="X-47B Phantom">
+                </div>
+                <div class="features">
+                    <p><strong>Features:</strong></p>
+                    <ul>
+                        <li>Stealth technology for radar evasion</li>
+                        <li>Autonomous flight capabilities</li>
+                        <li>Advanced sensor suite</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="jet">
+                <h3>Model: F-22 Raptor II</h3>
+                <div class="image-container">
+                    <img src="F-22 Raptor II.jpg" alt="F-22 Raptor II">
+                </div>
+                <div class="features">
+                    <p><strong>Features:</strong></p>
+                    <ul>
+                        <li>Supercruise ability for sustained supersonic flight</li>
+                        <li>Advanced avionics and combat systems</li>
+                        <li>Multi-role capabilities for air-to-air and air-to-ground missions</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="category">
+        <h2>Heavy Assault Fighters</h2>
+        <div class="jet-container">
+            <div class="jet">
+                <h3>Model: A-10 Thunderbolt X</h3>
+                <div class="image-container">
+                    <img src="A-10 Thunderbolt X.jpg" alt="A-10 Thunderbolt X">
+                </div>
+                <div class="features">
+                    <p><strong>Features:</strong></p>
+                    <ul>
+                        <li>Heavy armor and weaponry</li>
+                        <li>Precision strike capabilities</li>
+                        <li>Extended loiter time for ground support</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="jet">
+                <h3>Model: T-50 PAK FA</h3>
+                <div class="image-container">
+                    <img src="T-50 PAK FA.jpg" alt="T-50 PAK FA">
+                </div>
+                <div class="features">
+                    <p><strong>Features:</strong></p>
+                    <ul>
+                        <li>Super maneuverability for dogfights</li>
+                        <li>Advanced electronic warfare systems</li>
+                        <li>Multi-role functionality for various combat scenarios</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="category">
+        <h2>Multirole Fighters</h2>
+        <div class="jet-container">
+            <div class="jet">
+                <h3>Model: F-35 Lightning II</h3>
+                <div class="image-container">
+                    <img src="F-35 Lightning II.jpg" alt="F-35 Lightning II">
+                </div>
+                <div class="features">
+                    <p><strong>Features:</strong></p>
+                    <ul>
+                        <li>Vertical takeoff and landing capabilities</li>
+                        <li>Advanced stealth and sensor fusion</li>
+                        <li>Networked warfare capabilities</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="jet">
+                <h3>Model: Eurofighter Typhoon</h3>
+                <div class="image-container">
+                    <img src="Eurofighter Typhoon.jpg" alt="Eurofighter Typhoon">
+                </div>
+                <div class="features">
+                    <p><strong>Features:</strong></p>
+                    <ul>
+                        <li>High agility and speed</li>
+                        <li>Advanced weapon systems</li>
+                        <li>Effective in both air-to-air and air-to-ground roles</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="category">
+        <h2>Drone Fighters</h2>
+        <div class="jet-container">
+            <div class="jet">
+                <h3>Model: MQ-9 Reaper</h3>
+                <div class="image-container">
+                    <img src="MQ-9 Reaper.jpg" alt="MQ-9 Reaper">
+                </div>
+                <div class="features">
+                    <p><strong>Features:</strong></p>
+                    <ul>
+                        <li>Long endurance and high altitude</li>
+                        <li>Advanced surveillance and reconnaissance capabilities</li>
+                        <li>Precision strike capabilities</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="jet">
+                <h3>Model: X-62 VISTA</h3>
+                <div class="image-container">
+                    <img src="X-62 VISTA.jpg" alt="X-62 VISTA">
+                </div>
+                <div class="features">
+                    <p><strong>Features:</strong></p>
+                    <ul>
+                        <li>Flexible control modes for testing</li>
+                        <li>Advanced AI and autonomous flight</li>
+                        <li>Integration with manned aircraft systems</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="category">
+        <h2>Experimental Fighters</h2>
+        <div class="jet-container">
+            <div class="jet">
+                <h3>Model: Boeing Phantom Works</h3>
+                <div class="image-container">
+                    <img src="Boeing Phantom Works.jpg" alt="Boeing Phantom Works">
+                </div>
+                <div class="features">
+                    <p><strong>Features:</strong></p>
+                    <ul>
+                        <li>Innovative design and materials</li>
+                        <li>Next-generation propulsion systems</li>
+                        <li>Focus on future combat capabilities</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="jet">
+                <h3>Model: Aurora Flight Sciences</h3>
+                <div class="image-container">
+                    <img src="Aurora Flight Sciences.jpg" alt="Aurora Flight Sciences">
+                </div>
+                <div class="features">
+                    <p><strong>Features:</strong></p>
+                    <ul>
+                        <li>Hybrid propulsion technology</li>
+                        <li>Advanced aerodynamic design</li>
+                        <li>Potential for unmanned or manned operations</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
