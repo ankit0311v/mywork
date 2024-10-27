@@ -1,8 +1,29 @@
  /* div class 0 formatting border---------------------------------------------------------------------------------------------------------------------- */
 .div0{
-    margin: 50px;
-    background-color: black;
-    display: inline-block;
+    
+    height: 520px;
+    background-image: url('background1.jpg'); /* Replace with your image URL */
+    background-size: cover;
+    
+    
+   
+}
+body{
+    background-color: lightslategray;
+}
+#top{
+    background-color: lightslategray;    
+}
+#a77{
+    text-align: left;
+    color: aliceblue;
+}
+#a7x{
+    font: bold;
+    color: black;
+    background-color: aliceblue;
+    text-align: left;
+    color: white;
 }
 
 /* table div class 1 formatting border---------------------------------------------------------------------------------------------------------------------- */
@@ -22,7 +43,9 @@ table,td,th{
 }
 /* div 2 formatting---------------------------------------------------------------------------------------------------------------------- */
 .d2{
-    background-color: lightgoldenrodyellow;
+
+    display: inline-block;
+    
 }
 /* div 3 formatting---------------------------------------------------------------------------------------------------------------------- */
 .d3{
@@ -40,15 +63,17 @@ table,td,th{
     border-style: double;
     background-color: brown;
 }
-#top{
-    background-color: lightsalmon;
-}
+
 .xz1{
     margin: 430px;
 }
 #btn1{
+    
+    font: bold;
+    color: white;
+    background-color: black;
     margin-left: 410px;
-    margin-right: 440px;
+    margin-right: 395px;
 }
 #icon{
     margin: 155px;
@@ -56,7 +81,7 @@ table,td,th{
     
 }
 #h1x{
-    margin: 120px;
+    margin: 150px;
 }
 
 /* all headers formatting h1---------------------------------------------------------------------------------------------------------------------- */
