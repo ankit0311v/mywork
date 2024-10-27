@@ -33,9 +33,6 @@
             border-bottom: 2px solid #00ffcc;
             padding-bottom: 20px;
         }
-        .subcategory {
-            margin-left: 20px;
-        }
         .gun {
             background: rgba(255, 255, 255, 0.1);
             border-radius: 10px;
@@ -58,7 +55,7 @@
             border-radius: 8px;
             margin-bottom: 10px;
             border: 2px solid #00ffcc;
-            cursor: pointer; /* Change cursor to pointer for clickable images */
+            cursor: pointer;
         }
         h2 {
             font-size: 1.8em;
@@ -66,16 +63,6 @@
             color: #00ffcc;
             text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
         }
-        h3 {
-            margin: 20px 0 10px;
-            font-size: 1.5em;
-            color: #00ccff;
-        }
-        p {
-            margin: 5px 0;
-            color: #b0b0b0;
-        }
-        
         /* Modal styles */
         .modal {
             display: none;
@@ -105,6 +92,17 @@
             font-weight: bold;
             cursor: pointer;
         }
+        .mute-button {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            padding: 10px;
+            background-color: #e74c3c;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
@@ -118,23 +116,23 @@
             <h2>Light Machine Guns (LMG)</h2>
             <div class="subcategory">
                 <div class="gun">
-                    <img src="Thunderstrike Light machine gun.jpg" alt="Thunderstrike LMG" onclick="openModal('Thunderstrike Light machine gun.jpg')">
+                    <img src="Thunderstrike Light machine gun.jpg" alt="Thunderstrike LMG" data-sound="s1.mp3" onclick="openModal('Thunderstrike Light machine gun.jpg')">
                     <h2>Thunderstrike LMG</h2>
                 </div>
                 <div class="gun">
-                    <img src="Viper X-12.jpg" alt="Viper X-12" onclick="openModal('Viper X-12.jpg')">
+                    <img src="Viper X-12.jpg" alt="Viper X-12" data-sound="s2.mp3" onclick="openModal('Viper X-12.jpg')">
                     <h2>Viper X-12</h2>
                 </div>
                 <div class="gun">
-                    <img src="Phoenix Raptor.jpg" alt="Phoenix Raptor" onclick="openModal('Phoenix Raptor.jpg')">
+                    <img src="Phoenix Raptor.jpg" alt="Phoenix Raptor" data-sound="s3.mp3" onclick="openModal('Phoenix Raptor.jpg')">
                     <h2>Phoenix Raptor</h2>
                 </div>
                 <div class="gun">
-                    <img src="Cheetah Blaze.jpg" alt="Cheetah Blaze" onclick="openModal('Cheetah Blaze.jpg')">
+                    <img src="Cheetah Blaze.jpg" alt="Cheetah Blaze" data-sound="s4.mp3" onclick="openModal('Cheetah Blaze.jpg')">
                     <h2>Cheetah Blaze</h2>
                 </div>
                 <div class="gun">
-                    <img src="Falcon Fury.jpg" alt="Falcon Fury" onclick="openModal('Falcon Fury.jpg')">
+                    <img src="Falcon Fury.jpg" alt="Falcon Fury" data-sound="s5.mp3" onclick="openModal('Falcon Fury.jpg')">
                     <h2>Falcon Fury</h2>
                 </div>
             </div>
@@ -145,15 +143,15 @@
             <h2>Medium Machine Guns (MMG)</h2>
             <div class="subcategory">
                 <div class="gun">
-                    <img src="Shadow Hunter MMG.jpg" alt="Shadow Hunter MMG" onclick="openModal('Shadow Hunter MMG.jpg')">
+                    <img src="Shadow Hunter MMG.jpg" alt="Shadow Hunter MMG" data-sound="s6.mp3" onclick="openModal('Shadow Hunter MMG.jpg')">
                     <h2>Shadow Hunter MMG</h2>
                 </div>
                 <div class="gun">
-                    <img src="Steel Serpent.jpg" alt="Steel Serpent" onclick="openModal('Steel Serpent.jpg')">
+                    <img src="Steel Serpent.jpg" alt="Steel Serpent" data-sound="s7.mp3" onclick="openModal('Steel Serpent.jpg')">
                     <h2>Steel Serpent</h2>
                 </div>
                 <div class="gun">
-                    <img src="Cobra Strike.jpg" alt="Cobra Strike" onclick="openModal('Cobra Strike.jpg')">
+                    <img src="Cobra Strike.jpg" alt="Cobra Strike" data-sound="s8.mp3" onclick="openModal('Cobra Strike.jpg')">
                     <h2>Cobra Strike</h2>
                 </div>
             </div>
@@ -164,15 +162,15 @@
             <h2>Heavy Machine Guns (HMG)</h2>
             <div class="subcategory">
                 <div class="gun">
-                    <img src="Titan Reaper HMG.jpg" alt="Titan Reaper HMG" onclick="openModal('Titan Reaper HMG.jpg')">
+                    <img src="Titan Reaper HMG.jpg" alt="Titan Reaper HMG" data-sound="s9.mp3" onclick="openModal('Titan Reaper HMG.jpg')">
                     <h2>Titan Reaper HMG</h2>
                 </div>
                 <div class="gun">
-                    <img src="Dragonfire .50.jpg" alt="Dragonfire .50" onclick="openModal('Dragonfire .50.jpg')">
+                    <img src="Dragonfire .50.jpg" alt="Dragonfire .50" data-sound="s10.mp3" onclick="openModal('Dragonfire .50.jpg')">
                     <h2>Dragonfire .50</h2>
                 </div>
                 <div class="gun">
-                    <img src="Griffin Vortex.jpg" alt="Griffin Vortex" onclick="openModal('Griffin Vortex.jpg')">
+                    <img src="Griffin Vortex.jpg" alt="Griffin Vortex" data-sound="s11.mp3" onclick="openModal('Griffin Vortex.jpg')">
                     <h2>Griffin Vortex</h2>
                 </div>
             </div>
@@ -183,15 +181,15 @@
             <h2>Specialty Machine Guns</h2>
             <div class="subcategory">
                 <div class="gun">
-                    <img src="Nova Blaster.jpg" alt="Nova Blaster" onclick="openModal('Nova Blaster.jpg')">
+                    <img src="Nova Blaster.jpg" alt="Nova Blaster" data-sound="s12.mp3" onclick="openModal('Nova Blaster.jpg')">
                     <h2>Nova Blaster</h2>
                 </div>
                 <div class="gun">
-                    <img src="Wraith Gunner.jpg" alt="Wraith Gunner" onclick="openModal('Wraith Gunner.jpg')">
+                    <img src="Wraith Gunner.jpg" alt="Wraith Gunner" data-sound="s13.mp3" onclick="openModal('Wraith Gunner.jpg')">
                     <h2>Wraith Gunner</h2>
                 </div>
                 <div class="gun">
-                    <img src="Havoc V2.jpg" alt="Havoc V2" onclick="openModal('Havoc V2.jpg')">
+                    <img src="Havoc V2.jpg" alt="Havoc V2" data-sound="s14.mp3" onclick="openModal('Havoc V2.jpg')">
                     <h2>Havoc V2</h2>
                 </div>
             </div>
@@ -204,14 +202,40 @@
         <img class="modal-content" id="modalImage" alt="Full Size">
     </div>
 
+    <audio id="hoverSound" loop></audio>
+    <button class="mute-button" id="muteButton">Mute</button>
+
     <script>
+        const guns = document.querySelectorAll('.gun img');
+        const hoverSound = document.getElementById('hoverSound');
+        const muteButton = document.getElementById('muteButton');
+        let isMuted = false;
+
+        guns.forEach(gun => {
+            gun.addEventListener('mouseover', () => {
+                if (!isMuted) {
+                    const soundSrc = gun.getAttribute('data-sound');
+                    hoverSound.src = soundSrc;
+                    hoverSound.currentTime = 0; // Reset sound to start
+                    hoverSound.play();
+                }
+            });
+
+            gun.addEventListener('mouseleave', () => {
+                hoverSound.pause(); // Stop the sound when mouse leaves
+                hoverSound.currentTime = 0; // Reset sound to start
+            });
+        });
+
         function openModal(imageSrc) {
             document.getElementById('modalImage').src = imageSrc;
             document.getElementById('imageModal').style.display = "flex";
         }
+
         function closeModal() {
             document.getElementById('imageModal').style.display = "none";
         }
+
         // Close modal when clicking outside the image
         window.onclick = function(event) {
             const modal = document.getElementById('imageModal');
@@ -219,6 +243,14 @@
                 closeModal();
             }
         }
+
+        muteButton.addEventListener('click', () => {
+            isMuted = !isMuted; // Toggle mute state
+            muteButton.textContent = isMuted ? 'Unmute' : 'Mute'; // Update button text
+            if (isMuted) {
+                hoverSound.pause(); // Stop any playing sound
+            }
+        });
     </script>
 </body>
 </html>
