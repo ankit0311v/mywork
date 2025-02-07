@@ -1,19 +1,9 @@
  /* div class 0 formatting border---------------------------------------------------------------------------------------------------------------------- */
-.div0{
-    
-    height: 520px;
-    background-image: url('background1.jpg'); /* Replace with your image URL */
-    background-size: cover;
-    
-    
-   
-}
+
 body{
-    background-color: lightslategray;
+    background-color: rgba(69, 167, 247, 0.445);
 }
-#top{
-    background-color: lightslategray;    
-}
+
 #a77{
     text-align: left;
     color: aliceblue;
@@ -24,6 +14,9 @@ body{
     background-color: aliceblue;
     text-align: left;
     color: white;
+}
+#header{
+    background-color: rgb(167, 221, 170);
 }
 
 /* table div class 1 formatting border---------------------------------------------------------------------------------------------------------------------- */
@@ -37,9 +30,9 @@ table,td,th{
 }
 /* table formatting */
 #d1t1{
-    color:lightgray;
+    color:rgb(15, 13, 13);
     width: 100px;
-    background-color: brown;
+    background-color: rgb(248, 246, 246);
 }
 /* div 2 formatting---------------------------------------------------------------------------------------------------------------------- */
 .d2{
